@@ -16,6 +16,7 @@
 		97566C401ADC2E8000EE8AFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97566C3F1ADC2E8000EE8AFD /* Images.xcassets */; };
 		97566C431ADC2E8000EE8AFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97566C411ADC2E8000EE8AFD /* LaunchScreen.xib */; };
 		97566C4F1ADC2E8000EE8AFD /* PubNubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97566C4E1ADC2E8000EE8AFD /* PubNubTests.m */; };
+		97869DFF1ADC329A001C976A /* JSZSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97869DFE1ADC329A001C976A /* JSZSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		97566C481ADC2E8000EE8AFD /* PubNubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PubNubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97566C4D1ADC2E8000EE8AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97566C4E1ADC2E8000EE8AFD /* PubNubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PubNubTests.m; sourceTree = "<group>"; };
+		97869DFD1ADC329A001C976A /* JSZSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSZSessionManager.h; sourceTree = "<group>"; };
+		97869DFE1ADC329A001C976A /* JSZSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZSessionManager.m; sourceTree = "<group>"; };
 		A4509B9CA44800B5A160B09B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B03E639681431D6D49E44DFA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,6 +100,7 @@
 				97566C371ADC2E8000EE8AFD /* FirstViewController.m */,
 				97566C391ADC2E8000EE8AFD /* SecondViewController.h */,
 				97566C3A1ADC2E8000EE8AFD /* SecondViewController.m */,
+				97869DFC1ADC326A001C976A /* Network */,
 				97566C3C1ADC2E8000EE8AFD /* Main.storyboard */,
 				97566C3F1ADC2E8000EE8AFD /* Images.xcassets */,
 				97566C411ADC2E8000EE8AFD /* LaunchScreen.xib */,
@@ -129,6 +133,15 @@
 				97566C4D1ADC2E8000EE8AFD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97869DFC1ADC326A001C976A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				97869DFD1ADC329A001C976A /* JSZSessionManager.h */,
+				97869DFE1ADC329A001C976A /* JSZSessionManager.m */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		9B2C1C39BBCFF95E4803FD26 /* Frameworks */ = {
@@ -283,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97869DFF1ADC329A001C976A /* JSZSessionManager.m in Sources */,
 				97566C3B1ADC2E8000EE8AFD /* SecondViewController.m in Sources */,
 				97566C351ADC2E8000EE8AFD /* AppDelegate.m in Sources */,
 				97566C381ADC2E8000EE8AFD /* FirstViewController.m in Sources */,

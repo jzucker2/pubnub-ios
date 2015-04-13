@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "JSZSessionManager.h"
 
 @interface FirstViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+//    [[JSZSessionManager sharedInstance] helloWorldGet];
+    [[JSZSessionManager sharedInstance] subscribeTest];
+    
+//    [[JSZSessionManager sharedInstance] historyTest];
+    
 }
 
 - (void)didReceiveMemoryWarning {
